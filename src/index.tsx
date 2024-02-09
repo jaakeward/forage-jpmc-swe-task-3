@@ -9,3 +9,4 @@ declare global {
 }
 
 ReactDOM.render(<App />, document.getElementById('root'));
+
