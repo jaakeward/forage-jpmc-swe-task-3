@@ -22,7 +22,6 @@ class App extends Component<{}, IState> {
       return (<Graph data={this.state.data}/>)
     }
   }
-
   getDataFromServer() {
     let x = 0;
     const interval = setInterval(() => {
@@ -38,7 +37,6 @@ class App extends Component<{}, IState> {
       }
     }, 100);
   }
-
   render() {
     return (
       <div className="App">
@@ -54,6 +52,6 @@ class App extends Component<{}, IState> {
       </div>
     )
   }
-}
+};
 
 export default App;
