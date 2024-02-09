@@ -8,7 +8,6 @@ export interface Row {
   upper_bound: number,
   lower_bound: number,
   trigger_alert: number | undefined,
-  
 }
 export class DataManipulator {
   static generateRow(serverResponds: ServerRespond[]): Row {
@@ -25,8 +24,7 @@ export class DataManipulator {
           serverResponds[0].timestamp : serverResponds[1].timestamp,
         upper_bound: upperBound,
         lower_bound: lowerBound,
-        trigger_alert: ((ratio > upperBound)||(ratio < lowerBound)) ? ratio : undefined,
-      };
+        trigger_alert: (ratio > upperBound)||(ratio < lowerBound) ? ratio : undefined
+      }
   }
 };
-

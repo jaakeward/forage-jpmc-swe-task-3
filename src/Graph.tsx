@@ -40,9 +40,9 @@ class Graph extends Component<IProps, {}> {
         price_abc: 'avg',
         price_def: 'avg',
         ratio: 'avg',
-        timestamp: 'distinct count',
         upper_bound: 'avg',
         lower_bound: 'avg',
+        timestamp: 'distinct count',
         trigger_alert: 'avg',
       }));
     }
